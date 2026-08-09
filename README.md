@@ -118,7 +118,8 @@ While building this project, I practiced:
 **Rajan Singh**
 B.Tech (IT) Student | Aspiring AI & ML Engineer
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/rajansingh018
+
 
 ---
 
