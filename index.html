@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India Clone - Watch Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="NewToNetflix">
+        <!-- <nav> -->
+        <button type="button" aria-label="New to Netflix? Try 7 days for ₹0." class="bannerbutton">
+            <div class="gifticon-bannertext">
+                <span class="gifticon"><svg viewBox="0 0 24 24" width="24" height="24" data-icon="GiftMedium"
+                        data-icon-id=":r1d:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        role="img">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M8.39 1A3.4 3.4 0 0 0 5 4.39v.11q0 .82.34 1.5H4a2 2 0 0 0-2 2v2a2 2 0 0 0 1 1.73V20c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-8.27A2 2 0 0 0 22 10V8a2 2 0 0 0-2-2h-1.34q.33-.68.34-1.5v-.11a3.39 3.39 0 0 0-6.53-1.26L12 4.3l-.47-1.18A3.4 3.4 0 0 0 8.39 1M12 8h8v2H4V8zm5-3.5c0 .83-.67 1.5-1.5 1.5h-2.02l.85-2.13A1.39 1.39 0 0 1 17 4.4zM10.52 6l-.85-2.13A1.39 1.39 0 0 0 7 4.4v.11C7 5.33 7.67 6 8.5 6zM5 20v-8h6v8zm8 0h6v-8h-6z"
+                            clip-rule="evenodd"></path>
+                    </svg></span>
+                <span class="bannertext">New to Netflix? Try 7 days for ₹0.</span>
+            </div>
+        </button>
+        <!-- </nav> -->
+    </div>
+
+    <div class="main">
+        <nav>
+            <span class="logo"><img src="assets/logo.svg" alt="Netflix"></span>
+            <div>
+                <label for="language">Select your lang</label>
+                <select name="language" id="language" class="language-button">
+                    <option value="English">文/A English</option>
+                    <option value="Hindi">हिन्दी</option>
+                </select>
+                <button class="sign-out-button">Sign Out</button>
+            </div>
+
+        </nav>
+        <div class="box">
+            <div class="text">
+                <span class="line1"> Unlimited movies,</span>
+                <span class="line2">shows, and more</span>
+                <span>Plans start at ₹149. Cancel anytime.</span>
+                <button class="finish-signup">Finish-Sign Up &gt;</button>
+                <span>New members only. Terms below.</span>
+
+
+            </div>
+        </div>
+        <div class="curve-line"></div>
+    </div>
+
+    <section class="trending-section">
+        <div class="trending-container">
+            <h2>Trending Now</h2>
+
+            <div class="trending-wrapper">
+
+                <button class="scroll-btn left-btn" onclick="scrollTrending(-1)">❮</button>
+
+                <div class="trending-row" id="trendingRow">
+
+                    <div class="movie-card">
+                        <span class="rank">1</span>
+                        <img src="assets/images/movie1.jpg" alt="">
+                    </div>
+
+                    <div class="movie-card">
+                        <span class="rank">2</span>
+                        <img src="assets/images/movie2.jpg" alt="">
+                    </div>
+
+                    <div class="movie-card">
+                        <span class="rank">3</span>
+                        <img src="assets/images/movie3.jpg" alt="">
+                    </div>
+                    <div class="movie-card">
+                        <span class="rank">4</span>
+                        <img src="assets/images/movie4.jpg" alt="">
+                    </div>
+
+                    <div class="movie-card">
+                        <span class="rank">5</span>
+                        <img src="assets/images/movie5.jpg" alt="">
+                    </div>
+
+                    <div class="movie-card">
+                        <span class="rank">6</span>
+                        <img src="assets/images/movie6.jpg" alt="">
+                    </div>
+                    <div class="movie-card">
+                        <span class="rank">7</span>
+                        <img src="assets/images/movie7.jpg" alt="">
+                    </div>
+                    <div class="movie-card">
+                        <span class="rank">8</span>
+                        <img src="assets/images/movie8.jpg" alt="">
+                    </div>
+                    <div class="movie-card">
+                        <span class="rank">9</span>
+                        <img src="assets/images/movie9.jpg" alt="">
+                    </div>
+                    <div class="movie-card">
+                        <span class="rank">10</span>
+                        <img src="assets/images/movie10.jpg" alt="">
+                    </div>
+                </div>
+
+                <button class="scroll-btn right-btn" onclick="scrollTrending(1)">❯</button>
+
+            </div>
+        </div>
+    </section>
+    <section class="reasons-section">
+        <h2>More reasons to join</h2>
+        <br>
+        <div class="reasons-container">
+
+            <div class="reasons-grid">
+
+                <div class="reason-card">
+                    <h3>Enjoy on your TV</h3>
+                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                    <img src="assets/icons/tv.png" alt="TV">
+                </div>
+
+                <div class="reason-card">
+                    <h3>Download your shows to watch offline</h3>
+                    <p>Save your favourites easily and always have something to watch.</p>
+                    <img src="assets/icons/download.png" alt="Download">
+                </div>
+
+                <div class="reason-card">
+                    <h3>Watch everywhere</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    <img src="assets/icons/telescope.png" alt="Devices">
+                </div>
+
+                <div class="reason-card">
+                    <h3>Create profiles for kids</h3>
+                    <p>Send kids on adventures with their favourite characters in a space made just for them — free with
+                        your membership.</p>
+                    <img src="assets/icons/kids.png" alt="Kids">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <button class="footer-signup-btn">
+                <strong>Finish Sign-Up &gt;</strong>
+            </button>
+
+            <p class="footer-note">
+                This offer is only valid for new members. This offer is non-transferable.
+                You agree that Netflix will charge the membership fee at the end of the free
+                trial to your payment method and will automatically continue your membership
+                until you cancel. Some methods of payment may not be eligible to redeem this offer.
+            </p>
+
+            <p class="footer-call">
+                Questions? Call <a href="tel:0008009191743">000-800-919-1743</a>
+            </p>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <a href="https://help.netflix.com/en/node/412">FAQ</a>
+                    <a href="http://ir.netflix.com/">Investor Relations</a>
+                    <a href="https://help.netflix.com/legal/privacy">Privacy</a>
+                    <a href="https://fast.com/">Speed Test</a>
+                </div>
+
+                <div class="footer-col">
+                    <a href="https://help.netflix.com/">Help Centre</a>
+                    <a href="https://jobs.netflix.com/jobs">Jobs</a>
+                    <a href="https://www.netflix.com/in/#">Cookie Preferences</a>
+                    <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+                </div>
+
+                <div class="footer-col">
+                    <a href="https://www.netflix.com/youraccount">Account</a>
+                    <a href="https://www.netflix.com/watch">Ways to Watch</a>
+                    <a href="https://help.netflix.com/legal/corpinfo">Corporate Information</a>
+                    <a href="https://www.netflix.com/in/browse/genre/839338">Only on Netflix</a>
+                </div>
+
+                <div class="footer-col">
+                    <a href="https://media.netflix.com/">Media Centre</a>
+                    <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+                    <a href="https://help.netflix.com/contactus">Contact Us</a>
+                </div>
+            </div>
+
+            <select class="footer-lang-btn">Language
+                <option value="English">文/A English</option>
+                <option value="Hindi">हिन्दी </option>
+            </select>
+
+            <p class="footer-country">Netflix India Clone - By Rajan Singh</p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script src="script.js"></script>

@@ -1,0 +1,492 @@
+*{
+    padding:0%;
+    margin:0%;
+}
+.bannerbutton{
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 50px;
+    border-bottom: var(--Alert-alert--border-width, 1px) solid var(--Alert-alert--border, rgba(255, 255, 255, 0.2));
+    background: var(
+        --offer,
+        linear-gradient(
+            90deg,
+            var(--Violet-violet-600, #5c32bf) 0%,
+            var(--Violet-violet-600, #5c32bf) 20%,
+            var(--Red-red-500, #e50914) 100%
+        )
+    );
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border: none;
+}
+.gifticon-bannertext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.gifticon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+.bannertext{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    
+
+}
+    
+.main{
+    background-image: url('assets/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 800px;
+    position: relative;
+    margin-top: 50px;
+
+}
+/* Black shadow on all four sides */
+.main::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0) 20%), /* top */
+        linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0) 20%),    /* bottom */
+        linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0) 15%),   /* left */
+        linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0) 15%);    /* right */
+    z-index: 2;
+    pointer-events: none;
+}
+.main .box{
+    width: 100%;
+    /* opacity: 0.55; */
+    background-color: rgba(0, 0, 0, 0.55); /* opacity ki jagah rgba use karo */
+    position: absolute;
+    top: 0; 
+    left: 0;
+    right: 0;
+    height: 800px;
+}
+
+/* Hero text */
+.text{
+    position: relative;
+    /* z-index: 10; */
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.text :first-child{
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+}
+.text :nth-child(2){
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.text :nth-child(3){
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+}
+.text :nth-child(4){
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* Finish Sign Up button */
+.finish-signup{
+    width: 237px;
+    height: 53px;
+    margin: 28px auto 20px;
+    display: block;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 36px;
+    font-size: 24px;
+    font-weight: 800px;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.finish-signup:hover{
+    background-color: #c11119;
+}
+
+/* navbar */
+nav{
+    
+    top: 20px;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    max-width: 80vw;
+    padding: 20px 0;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.main nav img{
+    width: 148px;
+    position: relative;
+    z-index: 10;
+}
+.language-button{
+    width: 130px;
+    height: 38px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+.sign-out-button{
+    padding-left: 5px;
+    width: 95px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: rgb(223, 30, 30);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+/* Curve line */
+.curve-line{
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 90px;
+
+    border-top: 5px solid #e50914;
+    border-radius: 50% 50% 0 0;
+    background: radial-gradient(
+                    50% 500% at 50% -420%,
+                    rgba(64, 97, 231, 0.4) 80%,
+                    rgba(0, 0, 0, 0.1) 100%
+                ),black;
+     box-shadow:
+        0 -10px 40px rgba(229, 9, 20, 0.25),
+        0 -20px 50px rgba(27, 42, 122, 0.22);
+    z-index: 20;
+    pointer-events: none;
+}
+.trending-container{
+    background-color: black;
+    padding: 20px 0;
+}
+h2{
+    padding-left: 75px;
+    color: rgba(255, 255, 255, 0.883);
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.trending-row{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 65px;
+    padding: 10px 4px 16px;
+}
+.movie-card{
+    flex: 0 0 auto; 
+    width: 180px;
+    height: 260px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+.movie-card :hover{
+    transform: scale(1.07);
+    transition: transform 0.2s ease-in-out;
+}
+.movie-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.rank{
+    position: absolute;
+    left: -25px;
+    bottom: 20px;
+
+    font-size: 88px;
+    font-weight: 900;
+    line-height: 1;
+
+    color: #000;
+    -webkit-text-stroke: 1px #fff;
+
+    font-family: 'Arial Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    z-index: 15;
+    pointer-events: none;
+    text-shadow:
+        0 2px 10px rgba(0,0,0,0.45);
+
+    transition: transform 0.2s ease-in-out;
+}
+.movie-card:hover .rank{
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out; /* number bhi zoom hoga */
+}
+.trending-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-btn{
+    margin-left: 65px;
+    margin-right: 65px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 125px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: rgba(20,20,20,0.75);
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+
+    z-index: 50;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.scroll-btn:hover{
+    background: rgba(40,40,40,0.95);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.left-btn{
+    left: -22px;
+}
+
+.right-btn{
+    right: -22px;
+}
+.reasons-section{
+    background: #000;
+    padding: 60px 0 80px;
+}
+
+.reasons-container{
+    width: 80vw;
+    margin: auto;
+}
+
+.reasons-container h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.reasons-grid{
+    margin-left: -50px;
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+}
+
+.reason-card{
+    width: 300px;
+    height: 340px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 18px;
+    padding: 22px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.reason-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+
+.reason-card h3{
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.reason-card p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.82);
+    max-width: 88%;
+}
+
+.reason-card img{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    opacity: 0.95;
+}
+.footer{
+    background: #000;
+    color: #b3b3b3;
+    padding: 64px 0 80px;
+}
+
+.footer-container{
+    width: 80vw;
+    margin: auto;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.footer-signup-btn{
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 18px 34px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: background 0.2s ease;
+}
+
+.footer-signup-btn:hover{
+    background: #c11119;
+}
+
+.footer-note{
+    max-width: 1000px;
+    line-height: 1.55;
+    font-size: 15px;
+    margin-bottom: 56px;
+}
+
+.footer-call{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.footer-call a{
+    color: #b3b3b3;
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 48px;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-col a{
+    color: #b3b3b3;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.footer-col a:hover{
+    color: #fff;
+}
+
+.footer-lang-btn{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 28px;
+}
+
+.footer-country{
+    font-size: 14px;
+    color: #808080;
+}
+
+@media (max-width: 900px){
+    .footer-links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .footer-links{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-signup-btn{
+        width: 100%;
+    }
+}
