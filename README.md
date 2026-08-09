@@ -66,12 +66,7 @@ Open **index.html** in your browser.
 
 ## Live Demo
 
-Add your deployed link here after publishing:
-
-```text
-https://rajansingh018.github.io/netflix-clone/
-```
-
+[View Live Project](https://rajansingh018.github.io/netflix-clone/)
 ---
 
 ## Screenshots
