@@ -76,8 +76,6 @@ https://rajansingh018.github.io/netflix-clone/
 
 ## Screenshots
 
-## Screenshots
-
 ### login Section
 ![Hero](screenshots/homepage1.png)
 
