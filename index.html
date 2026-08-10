@@ -30,13 +30,13 @@
     <div class="main">
         <nav>
             <span class="logo"><img src="assets/logo.svg" alt="Netflix"></span>
-            <div>
+            <div class="nav-actions">
                 <label for="language">Select your lang</label>
                 <select name="language" id="language" class="language-button">
                     <option value="English">文/A English</option>
                     <option value="Hindi">हिन्दी</option>
                 </select>
-                <button class="sign-out-button">Sign Out</button>
+                <button class="sign-out-button">Sign In</button>
             </div>
 
         </nav>
@@ -152,9 +152,12 @@
     </section>
     <footer class="footer">
         <div class="footer-container">
+            <div class="footer-email-signup">
+                <input type="text" placeholder="Email address">
+            </div>
 
             <button class="footer-signup-btn">
-                <strong>Finish Sign-Up &gt;</strong>
+                <strong>Get Started &gt;</strong>
             </button>
 
             <p class="footer-note">
@@ -206,6 +209,12 @@
 
         </div>
     </footer>
+    <!-- Sticky Get Started Popup -->
+<div class="bottom-popup" id="bottomPopup">
+    <div class="popup-content">
+        <button>Get Started &gt;</button>
+    </div>
+</div>
 
 </body>
 
