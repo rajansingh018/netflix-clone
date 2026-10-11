@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netflix Clone</title>
+
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="nav-left">
+            <img src="assets/logo.svg" alt="Netflix" class="logo">
+
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Movies</a>
+                <a href="#">TV Shows</a>
+                <a href="#">My List</a>
+            </nav>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search movies...">
+                <button class="search-btn" id="search-btn">
+                    <img src="/frontend/assets/search.png" style="max-width: 25px;" srcset="">
+                </button>
+            </div>
+            <div class="profile">
+                <img src="/frontend/assets/profile.png" alt="Profile">
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-tag" id="hero-tag">FEATURED</p>
+
+<h1 id="hero-title">Stranger Things</h1>
+
+<div class="hero-info">
+    <span id="hero-year">2022</span>
+    <span id="hero-rating">IMDb 8.7</span>
+</div>
+
+<p class="hero-description" id="hero-description">
+    When a young boy disappears, his friends and family uncover
+    mysterious secrets, supernatural forces, and a strange
+    connection to their town.
+</p>
+
+            <div class="hero-buttons">
+                <button class="play-btn">
+                    ▶ Play
+                </button>
+
+                <button class="info-btn">
+                    ⓘ More Info
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Movie Sections -->
+    <main class="movie-container">
+        <section class="movie-section search-results-section" id="search-results-section">
+            <h2>Search Results</h2>
+
+            <div class="movie-row" id="search-results"></div>
+            
+        </section>
+
+        <!-- Popular -->
+        <section class="movie-section">
+
+            <h2>Popular Movies</h2>
+            
+
+            <div class="movie-row" id="popular-movies">
+
+                <div class="movie-card">
+                    <img src="./assets/movie1.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie2.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie3.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie4.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie5.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie6.jpg" alt="Movie">
+                </div>
+
+            </div>
+           
+
+        </section>
+
+
+        <!-- Trending -->
+        <section class="movie-section">
+
+            <h2>Trending Now</h2>
+
+            <div class="movie-row" id="trending-movies">
+
+                <div class="movie-card">
+                    <img src="./assets/movie7.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie8.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie9.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie10.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie11.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/movie12.jpg" alt="Movie">
+                </div>
+
+            </div>
+
+
+        <!-- Action -->
+        <section class="movie-section">
+
+            <h2>Action Movies</h2>
+            <div class="movie-row" id="action-movies">
+
+                <div class="movie-card">
+                    <img src="./assets/action1.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/action2.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/action3.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/action4.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/action5.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/action6.jpg" alt="Movie">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Comedy -->
+        <section class="movie-section">
+
+            <h2>Comedy Movies</h2>
+            <div class="movie-row" id="comedy-movies">
+
+                <div class="movie-card">
+                    <img src="./assets/comedy1.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/comedy2.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/comedy3.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/comedy4.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/comedy5.jpg" alt="Movie">
+                </div>
+
+                <div class="movie-card">
+                    <img src="./assets/comedy6.jpg" alt="Movie">
+                </div>
+
+            </div>
+
+        </section>
+        <div class="movie-modal" id="movie-modal">
+
+            <div class="modal-content">
+
+                <button class="modal-close" id="modal-close">
+                    &times;
+                </button>
+
+                <div class="modal-poster">
+                    <img id="modal-poster" src="" alt="Movie Poster">
+                </div>
+
+                <div class="modal-details">
+
+                    <h2 id="modal-title"></h2>
+
+                    <div class="modal-info">
+                        <span id="modal-year"></span>
+                        <span id="modal-runtime"></span>
+                        <span id="modal-rating"></span>
+                    </div>
+
+                    <p id="modal-genre"></p>
+
+                    <p id="modal-plot"></p>
+
+                    <p id="modal-actors"></p>
+                    <button id="trailer-btn" class="trailer-btn">
+                        ▶ Watch Trailer
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="trailer-modal" id="trailer-modal">
+
+    <div class="trailer-content">
+
+        <button class="trailer-close" id="trailer-close">
+            &times;
+        </button>
+
+        <iframe
+            id="trailer-player"
+            src=""
+            title="Movie Trailer"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</div>
+
+    </main>
+
+<footer class="footer">
+    <div class="footer-links">
+    <a href="#">Audio and Subtitles</a>
+    <a href="#">Help Center</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms of Use</a>
+</div>
+    <p>© 2026 Netflix Clone. All rights reserved.</p>
+</footer>
+    <script src="homepage.js"></script>
+
+</body>
+
+</html>
