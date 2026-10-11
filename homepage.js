@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
 });
 
 //Connecting homepage to backend
-const API_URL = "http://localhost:5001/api/movies";
+const API_URL = "https://netflix-clone-backend-theta.vercel.app/api/movies";
 
 const categories = [
     {
@@ -113,7 +113,7 @@ document.addEventListener('click', async (e)=>{
 trailerBtn.onclick = async () => {
     try {
         const trailerResponse = await fetch(
-            `http://localhost:5001/api/trailer?query=${encodeURIComponent(movie.Title)}`
+            `https://netflix-clone-backend-theta.vercel.app/api/trailer?query=${encodeURIComponent(movie.Title)}`
         );
 
         const trailer = await trailerResponse.json();
@@ -261,7 +261,7 @@ heroInfoBtn.addEventListener("click", async () => {
 trailerBtn.onclick = async () => {
     try {
         const trailerResponse = await fetch(
-            `http://localhost:5001/api/trailer?query=Stranger%20Things`
+            `https://netflix-clone-backend-theta.vercel.app/api/trailer?query=Stranger%20Things`
         );
 
         const trailer = await trailerResponse.json();
